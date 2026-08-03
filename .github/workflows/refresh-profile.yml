@@ -1,0 +1,52 @@
+name: Refresh profile
+
+on:
+  schedule:
+    - cron: "17 5 * * 1"      # Mondays, 05:17 UTC
+  workflow_dispatch:           # run by hand from the Actions tab
+  push:
+    paths:
+      - build_profile.py
+      - config.json
+      - .github/workflows/refresh-profile.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-profile
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Regenerate README and graphics
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python build_profile.py
+
+      - name: Check the SVGs are well-formed
+        run: |
+          for f in assets/*.svg; do
+            python -c "import xml.etree.ElementTree as ET,sys; ET.parse(sys.argv[1])" "$f"
+          done
+          echo "All SVGs parse."
+
+      - name: Commit if anything changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet; then
+            echo "Nothing changed."
+            exit 0
+          fi
+          git add README.md assets
+          git commit -m "Refresh profile stats $(date -u +%Y-%m-%d)"
+          git push

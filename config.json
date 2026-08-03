@@ -1,0 +1,48 @@
+{
+  "user": "cinnetcrash",
+
+  "intro": "# Gültekin Ünal\n\n[![ORCID](https://img.shields.io/badge/ORCID-0000--0002--8996--7028-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0000-0002-8996-7028)\n\nVeterinarian (DVM, PhD) working in microbiology and bioinformatics at Ankara\nUniversity, Faculty of Veterinary Medicine (Department of Microbiology). My work\nsits where clinical and veterinary microbiology meets genomics: **bacteriophage\ngenomics**, **antimicrobial resistance surveillance**, and **whole-genome\nsequencing of bacterial isolates** — mostly as reproducible Nextflow and\nSnakemake pipelines.",
+
+  "sections": [
+    {
+      "title": "Pipelines & tools",
+      "repos": ["phage_analysis", "gelidonyamr", "reffree-amr-gwas",
+                "kanatli-mikrobiyom-pipeline", "GenomePlatform"]
+    },
+    {
+      "title": "Data & schemas",
+      "repos": ["Lgarvieae-cgMLST", "Lactococcus_paper_data",
+                "staph-phage-assembly-analysis"]
+    },
+    {
+      "title": "Teaching & outreach",
+      "repos": ["cinnetcrash.github.io", "EQA_demo", "EQA_Pse_Report",
+                "genomehunter", "Biyoinformatik_TR"]
+    }
+  ],
+
+  "blurbs": {
+    "phage_analysis": "Nextflow DSL2 pipeline for bacteriophage discovery and characterisation — fastp, Kraken2, SPAdes, VirSorter2, CheckV, BACPHLIP, Pharokka, vContact2",
+    "gelidonyamr": "Nextflow pipeline for *Salmonella* Infantis: assembly, AMR profiling, plasmid detection, MLST/cgMLST typing",
+    "reffree-amr-gwas": "Reference-free AMR GWAS — unitig-based `pyseer` mixed model that flags novel resistance determinants and scores their phylogenetic mobility",
+    "kanatli-mikrobiyom-pipeline": "Nanopore metagenomics for poultry gut microbiome (Nextflow DSL2 + Kraken2)",
+    "GenomePlatform": "FastAPI platform running a bacterial genome analysis chain end to end, with AI-assisted reporting and PCR primer design *(research use only)*",
+    "Lgarvieae-cgMLST": "chewBBACA-compatible core-genome MLST schema for *Lactococcus garvieae* — 1100 loci from 247 QC'd genomes",
+    "Lactococcus_paper_data": "Supplementary data and figure code for the *L. garvieae* / rainbow trout characterisation paper",
+    "staph-phage-assembly-analysis": "Assembly and characterisation outputs for *S. aureus* bacteriophage isolates",
+    "cinnetcrash.github.io": "Bilingual (TR/EN) microbial bioinformatics training curriculum",
+    "EQA_demo": "Interactive WGS outbreak investigation built on a CRAB EQA exercise — teaching scenario",
+    "EQA_Pse_Report": "*P. aeruginosa* WGS EQA panel: MLST, AMR, phylogenomics, plasmid typing",
+    "genomehunter": "Browser game teaching kids the bioinformatics pipeline, DNA → genome",
+    "Biyoinformatik_TR": "Turkish-language bioinformatics training material"
+  },
+
+  "sites": {
+    "Training curriculum": "https://cinnetcrash.github.io/",
+    "CRAB outbreak investigation": "https://cinnetcrash.github.io/EQA_demo/",
+    "Pseudomonas EQA report": "https://cinnetcrash.github.io/EQA_Pse_Report/",
+    "GenomeHunter": "https://cinnetcrash.github.io/genomehunter/"
+  },
+
+  "outro": "**Working with:** Nextflow · Snakemake · Python · R · Docker / Singularity · Bakta · Prokka · chewBBACA · pyseer · Kraken2 · CheckV\n\n📫 gultekinnunal@gmail.com · 🆔 [ORCID 0000-0002-8996-7028](https://orcid.org/0000-0002-8996-7028)\n\n<details>\n<summary><b>Türkçe</b></summary>\n\n<br>\n\nAnkara Üniversitesi Veteriner Fakültesi Mikrobiyoloji Anabilim Dalı'nda\nmikrobiyoloji ve biyoinformatik alanında çalışan bir veteriner hekimim (DVM, PhD).\nÇalışma alanlarım **bakteriyofaj genomiği**, **antimikrobiyal direnç sürveyansı**\nve **klinik bakteriyel tam genom dizileme** — ağırlıklı olarak yeniden\nüretilebilir Nextflow ve Snakemake iş akışları biçiminde.\n\nTürkçe biyoinformatik eğitim modülleri için\n[cinnetcrash.github.io](https://cinnetcrash.github.io/) adresine bakabilirsiniz.\nKatkı, hata bildirimi ve iş birliği önerilerine açığım.\n\n</details>"
+}

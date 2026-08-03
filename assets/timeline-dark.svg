@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="424" viewBox="0 0 760 424" role="img" aria-label="Active period of each featured project">
+<rect x="0.5" y="0.5" width="759" height="423" rx="10" fill="#151b23" stroke="#3d444d"/>
+<text x="24" y="30" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#9198a1" letter-spacing="0.6">PROJECT TIMELINE &#183; FIRST COMMIT TO LAST PUSH</text>
+<line x1="258.4" y1="38" x2="258.4" y2="398" stroke="#3d444d" stroke-width="1"/>
+<text x="258.4" y="414" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" fill="#9198a1" text-anchor="middle">2020</text>
+<line x1="321.6" y1="38" x2="321.6" y2="398" stroke="#3d444d" stroke-width="1"/>
+<text x="321.6" y="414" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" fill="#9198a1" text-anchor="middle">2021</text>
+<line x1="384.6" y1="38" x2="384.6" y2="398" stroke="#3d444d" stroke-width="1"/>
+<text x="384.6" y="414" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" fill="#9198a1" text-anchor="middle">2022</text>
+<line x1="447.6" y1="38" x2="447.6" y2="398" stroke="#3d444d" stroke-width="1"/>
+<text x="447.6" y="414" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" fill="#9198a1" text-anchor="middle">2023</text>
+<line x1="510.6" y1="38" x2="510.6" y2="398" stroke="#3d444d" stroke-width="1"/>
+<text x="510.6" y="414" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" fill="#9198a1" text-anchor="middle">2024</text>
+<line x1="573.8" y1="38" x2="573.8" y2="398" stroke="#3d444d" stroke-width="1"/>
+<text x="573.8" y="414" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" fill="#9198a1" text-anchor="middle">2025</text>
+<line x1="636.9" y1="38" x2="636.9" y2="398" stroke="#3d444d" stroke-width="1"/>
+<text x="636.9" y="414" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" fill="#9198a1" text-anchor="middle">2026</text>
+<text x="198" y="63" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12" fill="#f0f6fc" text-anchor="end">Biyoinformatik_TR</text>
+<rect x="210.0" y="52" width="321.4" height="12" rx="4" fill="#3987e5"/>
+<text x="539.4" y="63" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" fill="#9198a1">5 yr</text>
+<text x="198" y="89" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12" fill="#f0f6fc" text-anchor="end">cinnetcrash.github.io</text>
+<rect x="425.2" y="78" width="229.8" height="12" rx="4" fill="#3987e5"/>
+<text x="663.0" y="89" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" fill="#9198a1">3 yr</text>
+<text x="198" y="115" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12" fill="#f0f6fc" text-anchor="end">gelidonyamr</text>
+<rect x="580.8" y="104" width="93.1" height="12" rx="4" fill="#3987e5"/>
+<text x="681.8" y="115" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" fill="#9198a1">18 mo</text>
+<text x="198" y="141" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12" fill="#f0f6fc" text-anchor="end">GenomePlatform</text>
+<rect x="655.0" y="130" width="19.0" height="12" rx="4" fill="#3987e5"/>
+<text x="682.0" y="141" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" fill="#9198a1">4 mo</text>
+<text x="198" y="167" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12" fill="#f0f6fc" text-anchor="end">phage_analysis</text>
+<rect x="655.2" y="156" width="18.8" height="12" rx="4" fill="#3987e5"/>
+<text x="682.0" y="167" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" fill="#9198a1">4 mo</text>
+<text x="198" y="193" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12" fill="#f0f6fc" text-anchor="end">EQA_demo</text>
+<rect x="655.4" y="182" width="18.5" height="12" rx="4" fill="#3987e5"/>
+<text x="681.8" y="193" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" fill="#9198a1">4 mo</text>
+<text x="198" y="219" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12" fill="#f0f6fc" text-anchor="end">EQA_Pse_Report</text>
+<rect x="655.5" y="208" width="18.3" height="12" rx="4" fill="#3987e5"/>
+<text x="681.8" y="219" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" fill="#9198a1">3 mo</text>
+<text x="198" y="245" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12" fill="#f0f6fc" text-anchor="end">kanatli-mikrobiyom-pipeline</text>
+<rect x="657.6" y="234" width="16.4" height="12" rx="4" fill="#3987e5"/>
+<text x="682.0" y="245" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" fill="#9198a1">3 mo</text>
+<text x="198" y="271" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12" fill="#f0f6fc" text-anchor="end">staph-phage-assembly-analysis</text>
+<rect x="660.2" y="260" width="13.6" height="12" rx="4" fill="#3987e5"/>
+<text x="681.8" y="271" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" fill="#9198a1">3 mo</text>
+<text x="198" y="297" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12" fill="#f0f6fc" text-anchor="end">Lgarvieae-cgMLST</text>
+<rect x="662.8" y="286" width="11.1" height="12" rx="4" fill="#3987e5"/>
+<text x="681.8" y="297" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" fill="#9198a1">2 mo</text>
+<text x="198" y="323" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12" fill="#f0f6fc" text-anchor="end">reffree-amr-gwas</text>
+<rect x="664.5" y="312" width="9.3" height="12" rx="4" fill="#3987e5"/>
+<text x="681.8" y="323" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" fill="#9198a1">2 mo</text>
+<text x="198" y="349" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12" fill="#f0f6fc" text-anchor="end">genomehunter</text>
+<rect x="664.7" y="338" width="9.2" height="12" rx="4" fill="#3987e5"/>
+<text x="681.8" y="349" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" fill="#9198a1">2 mo</text>
+<text x="198" y="375" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12" fill="#f0f6fc" text-anchor="end">Lactococcus_paper_data</text>
+<rect x="671.9" y="364" width="4.0" height="12" rx="4" fill="#3987e5"/>
+<text x="683.9" y="375" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" fill="#9198a1">1 mo</text>
+</svg>

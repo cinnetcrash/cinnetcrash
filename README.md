@@ -1,47 +1,67 @@
 # Gültekin Ünal
 
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0002--8996--7028-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0000-0002-8996-7028)
-[![Website](https://img.shields.io/badge/Training_site-cinnetcrash.github.io-0A66C2)](https://cinnetcrash.github.io/)
 
 Veterinarian (DVM, PhD) working in microbiology and bioinformatics at Ankara
-University, Faculty of Veterinary Medicine (Department of Microbiology). My work sits where
-clinical and veterinary microbiology meets genomics: **bacteriophage genomics**,
-**antimicrobial resistance surveillance**, and **whole-genome sequencing of
-bacterial isolates** — mostly as reproducible Nextflow and Snakemake pipelines.
+University, Faculty of Veterinary Medicine (Department of Microbiology). My work
+sits where clinical and veterinary microbiology meets genomics: **bacteriophage
+genomics**, **antimicrobial resistance surveillance**, and **whole-genome
+sequencing of bacterial isolates** — mostly as reproducible Nextflow and
+Snakemake pipelines.
 
----
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
+  <img alt="Repository statistics" src="assets/stats-light.svg" width="100%">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg">
+  <img alt="Language distribution" src="assets/languages-light.svg" width="100%">
+</picture>
 
 ## Pipelines & tools
 
 | Repository | What it does |
 |---|---|
-| [**phage_analysis**](https://github.com/cinnetcrash/phage_analysis) | Nextflow DSL2 pipeline for bacteriophage discovery and characterisation — fastp, Kraken2, SPAdes, VirSorter2, CheckV, BACPHLIP, Pharokka, vContact2 |
-| [**gelidonyamr**](https://github.com/cinnetcrash/gelidonyamr) | Nextflow pipeline for *Salmonella* Infantis: assembly, AMR profiling, plasmid detection, MLST/cgMLST typing |
+| [**phage_analysis**](https://github.com/cinnetcrash/phage_analysis) ⭐2 | Nextflow DSL2 pipeline for bacteriophage discovery and characterisation — fastp, Kraken2, SPAdes, VirSorter2, CheckV, BACPHLIP, Pharokka, vContact2 |
+| [**gelidonyamr**](https://github.com/cinnetcrash/gelidonyamr) ⭐2 | Nextflow pipeline for *Salmonella* Infantis: assembly, AMR profiling, plasmid detection, MLST/cgMLST typing |
 | [**reffree-amr-gwas**](https://github.com/cinnetcrash/reffree-amr-gwas) | Reference-free AMR GWAS — unitig-based `pyseer` mixed model that flags novel resistance determinants and scores their phylogenetic mobility |
 | [**kanatli-mikrobiyom-pipeline**](https://github.com/cinnetcrash/kanatli-mikrobiyom-pipeline) | Nanopore metagenomics for poultry gut microbiome (Nextflow DSL2 + Kraken2) |
-| [**GenomePlatform**](https://github.com/cinnetcrash/GenomePlatform) | FastAPI platform running a bacterial genome analysis chain end to end, with AI-assisted reporting *(research use only)* |
+| [**GenomePlatform**](https://github.com/cinnetcrash/GenomePlatform) ⭐1 | FastAPI platform running a bacterial genome analysis chain end to end, with AI-assisted reporting and PCR primer design *(research use only)* |
 
 ## Data & schemas
 
-| Repository | What it is |
+| Repository | What it does |
 |---|---|
-| [**Lgarvieae-cgMLST**](https://github.com/cinnetcrash/Lgarvieae-cgMLST) | chewBBACA-compatible core-genome MLST schema for *Lactococcus garvieae* — 1100 loci, built from 247 QC'd genomes |
+| [**Lgarvieae-cgMLST**](https://github.com/cinnetcrash/Lgarvieae-cgMLST) | chewBBACA-compatible core-genome MLST schema for *Lactococcus garvieae* — 1100 loci from 247 QC'd genomes |
 | [**Lactococcus_paper_data**](https://github.com/cinnetcrash/Lactococcus_paper_data) | Supplementary data and figure code for the *L. garvieae* / rainbow trout characterisation paper |
 | [**staph-phage-assembly-analysis**](https://github.com/cinnetcrash/staph-phage-assembly-analysis) | Assembly and characterisation outputs for *S. aureus* bacteriophage isolates |
 
 ## Teaching & outreach
 
-| Site | About |
+| Repository | What it does |
 |---|---|
-| [**Microbial bioinformatics curriculum**](https://cinnetcrash.github.io/) | Bilingual (TR/EN) training modules for microbiologists |
-| [**CRAB outbreak investigation**](https://cinnetcrash.github.io/EQA_demo/) | Interactive WGS outbreak walkthrough built on an EQA exercise — teaching scenario |
-| [**Pseudomonas EQA report**](https://cinnetcrash.github.io/EQA_Pse_Report/) | *P. aeruginosa* WGS EQA panel: MLST, AMR, phylogenomics, plasmid typing |
-| [**GenomeHunter**](https://cinnetcrash.github.io/genomehunter/) | Browser game teaching kids the bioinformatics pipeline, DNA → genome |
+| [**cinnetcrash.github.io**](https://github.com/cinnetcrash/cinnetcrash.github.io) ⭐1 | Bilingual (TR/EN) microbial bioinformatics training curriculum |
+| [**EQA_demo**](https://github.com/cinnetcrash/EQA_demo) | Interactive WGS outbreak investigation built on a CRAB EQA exercise — teaching scenario |
+| [**EQA_Pse_Report**](https://github.com/cinnetcrash/EQA_Pse_Report) | *P. aeruginosa* WGS EQA panel: MLST, AMR, phylogenomics, plasmid typing |
+| [**genomehunter**](https://github.com/cinnetcrash/genomehunter) | Browser game teaching kids the bioinformatics pipeline, DNA → genome |
+| [**Biyoinformatik_TR**](https://github.com/cinnetcrash/Biyoinformatik_TR) ⭐1 | Turkish-language bioinformatics training material |
 
----
+## Live sites
 
-**Working with:** Nextflow · Snakemake · Python · R · Docker / Singularity · Bakta ·
-Prokka · chewBBACA · pyseer · Kraken2 · CheckV
+| Page | URL |
+|---|---|
+| [Training curriculum](https://cinnetcrash.github.io/) | https://cinnetcrash.github.io/ |
+| [CRAB outbreak investigation](https://cinnetcrash.github.io/EQA_demo/) | https://cinnetcrash.github.io/EQA_demo/ |
+| [Pseudomonas EQA report](https://cinnetcrash.github.io/EQA_Pse_Report/) | https://cinnetcrash.github.io/EQA_Pse_Report/ |
+| [GenomeHunter](https://cinnetcrash.github.io/genomehunter/) | https://cinnetcrash.github.io/genomehunter/ |
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/timeline-dark.svg">
+  <img alt="Active period of each featured project" src="assets/timeline-light.svg" width="100%">
+</picture>
+
+**Working with:** Nextflow · Snakemake · Python · R · Docker / Singularity · Bakta · Prokka · chewBBACA · pyseer · Kraken2 · CheckV
 
 📫 gultekinnunal@gmail.com · 🆔 [ORCID 0000-0002-8996-7028](https://orcid.org/0000-0002-8996-7028)
 
@@ -52,15 +72,14 @@ Prokka · chewBBACA · pyseer · Kraken2 · CheckV
 
 Ankara Üniversitesi Veteriner Fakültesi Mikrobiyoloji Anabilim Dalı'nda
 mikrobiyoloji ve biyoinformatik alanında çalışan bir veteriner hekimim (DVM, PhD).
-Çalışma alanlarım **bakteriyofaj genomiği**, **antimikrobiyal direnç
-sürveyansı** ve **klinik bakteriyel tam genom dizileme** — ağırlıklı olarak
-yeniden üretilebilir Nextflow ve Snakemake iş akışları biçiminde.
+Çalışma alanlarım **bakteriyofaj genomiği**, **antimikrobiyal direnç sürveyansı**
+ve **klinik bakteriyel tam genom dizileme** — ağırlıklı olarak yeniden
+üretilebilir Nextflow ve Snakemake iş akışları biçiminde.
 
-Depoların çoğu yukarıdaki tablolarda; eğitim materyalleri ve etkileşimli
-demolar için [cinnetcrash.github.io](https://cinnetcrash.github.io/) adresine
-bakabilirsiniz. Türkçe biyoinformatik eğitim modülleri de burada.
-
-Katkı, hata bildirimi ve iş birliği önerilerine açığım — issue açabilir veya
-e-posta ile ulaşabilirsiniz.
+Türkçe biyoinformatik eğitim modülleri için
+[cinnetcrash.github.io](https://cinnetcrash.github.io/) adresine bakabilirsiniz.
+Katkı, hata bildirimi ve iş birliği önerilerine açığım.
 
 </details>
+
+<sub>Generated by [`build_profile.py`](build_profile.py) on 2026-08-03.</sub>
