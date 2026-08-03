@@ -3,8 +3,8 @@
 <text x="24" y="30" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#9198a1" letter-spacing="0.6">REPOSITORIES BY PRIMARY LANGUAGE</text>
 <clipPath id="barclip"><rect x="24" y="44" width="712" height="16" rx="8.0"/></clipPath>
 <g clip-path="url(#barclip)">
-<rect x="24.00" y="44" width="224.55" height="16" fill="#3987e5"/>
-<rect x="250.55" y="44" width="127.45" height="16" fill="#c98500"/>
+<rect x="24.00" y="44" width="256.91" height="16" fill="#3987e5"/>
+<rect x="282.91" y="44" width="95.09" height="16" fill="#c98500"/>
 <rect x="380.00" y="44" width="95.09" height="16" fill="#199e70"/>
 <rect x="477.09" y="44" width="95.09" height="16" fill="#d95926"/>
 <rect x="574.18" y="44" width="62.73" height="16" fill="#d55181"/>
@@ -13,9 +13,9 @@
 <rect x="703.64" y="44" width="32.36" height="16" fill="#9085e9"/>
 </g>
 <circle cx="29" cy="90" r="5" fill="#3987e5"/>
-<text x="42" y="94" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12.5" fill="#f0f6fc">Python <tspan fill="#9198a1">32%</tspan></text>
+<text x="42" y="94" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12.5" fill="#f0f6fc">Python <tspan fill="#9198a1">36%</tspan></text>
 <circle cx="207" cy="90" r="5" fill="#c98500"/>
-<text x="220" y="94" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12.5" fill="#f0f6fc">HTML <tspan fill="#9198a1">18%</tspan></text>
+<text x="220" y="94" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12.5" fill="#f0f6fc">HTML <tspan fill="#9198a1">14%</tspan></text>
 <circle cx="385" cy="90" r="5" fill="#199e70"/>
 <text x="398" y="94" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12.5" fill="#f0f6fc">Nextflow <tspan fill="#9198a1">14%</tspan></text>
 <circle cx="563" cy="90" r="5" fill="#d95926"/>

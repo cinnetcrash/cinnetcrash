@@ -28,9 +28,29 @@ and commits the result only when something actually changed.
 | Key | What it controls |
 |---|---|
 | `intro` / `outro` | Markdown above and below the generated blocks |
-| `sections` | Ordered groups of featured repos, rendered as tables |
+| `featured` | The repo pulled out at the top as "Currently working on" |
+| `sections` | Ordered groups of featured repos, rendered as collapsible blocks |
 | `blurbs` | Per-repo one-liner. Falls back to the repo's GitHub description |
-| `sites` | The "Live sites" table |
+| `sites` | Candidates for the "Live sites" table |
+
+Blurbs accept a little markdown — `*italics*`, `**bold**`, `` `code` `` and
+`[links](url)`. They are converted to HTML because the project lists live inside
+`<details>` blocks, where GitHub does not run the markdown parser.
+
+`featured` is set explicitly rather than derived. Falling back to
+most-recently-pushed sounds reasonable but misbehaves: a round of maintenance
+commits across many repositories promotes whichever one happened to be touched
+last. The fallback is still there for when `featured` is unset or points at an
+archived repo.
+
+Entries in `sites` are HEAD-checked at build time. A URL that stops answering —
+repository turned private, Pages switched off — is dropped from the table and
+reported on stderr, so the profile never carries a dead link.
+
+Archived repositories are collected into their own collapsed
+"No longer maintained" block with a 🛑 marker, rather than vanishing. Give them a
+blurb saying *why* they were archived; that is more useful to a visitor than
+silence.
 
 A repo named in `sections` that no longer exists is skipped silently, so renaming
 or deleting one won't break the build. Featured repos are also what the timeline

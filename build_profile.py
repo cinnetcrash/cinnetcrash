@@ -16,6 +16,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import sys
 import urllib.error
 import urllib.request
@@ -83,6 +84,22 @@ def api(path: str, token: str) -> object:
             return json.load(resp)
     except urllib.error.HTTPError as exc:
         sys.exit(f"GitHub API {exc.code} on {path}: {exc.read()[:200].decode()}")
+
+
+def url_is_live(url: str) -> bool:
+    """True if the URL answers 2xx.
+
+    Checked at build time so a page that goes away — a repository turned
+    private, Pages switched off — drops out of the profile on the next run
+    instead of sitting there as a dead link.
+    """
+    req = urllib.request.Request(url, method="HEAD",
+                                 headers={"User-Agent": "profile-builder"})
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            return 200 <= resp.status < 300
+    except Exception:
+        return False
 
 
 def fetch_repos(user: str, token: str) -> list[dict]:
@@ -308,16 +325,68 @@ def timeline_data(by_name: dict[str, dict], names: list[str]) -> list[dict]:
     return sorted(out, key=lambda p: p["start"])
 
 
-def table(repos_by_name: dict[str, dict], names: list[str], blurbs: dict) -> str:
-    rows = ["| Repository | What it does |", "|---|---|"]
-    for name in names:
-        r = repos_by_name.get(name)
-        if r is None:
-            continue                      # renamed or deleted: drop it silently
-        desc = blurbs.get(name) or r.get("description") or "—"
-        star = f" ⭐{r['stargazers_count']}" if r["stargazers_count"] else ""
-        rows.append(f"| [**{name}**](https://github.com/{r['full_name']}){star} | {desc} |")
-    return "\n".join(rows) if len(rows) > 2 else ""
+_MD_RULES = [
+    ("`", "code"),      # `x`  -> <code>x</code>
+]
+
+
+def md_inline(text: str) -> str:
+    """Minimal markdown -> HTML for blurbs.
+
+    Everything inside a <details> block is raw HTML, where GitHub does not run
+    the markdown parser — so *italics*, **bold** and `code` have to be converted
+    by hand or they show up as literal asterisks.
+    """
+    out = re.sub(r"\[([^\]]+)\]\(([^)]+)\)",
+                 lambda m: f'<a href="{m.group(2)}">{m.group(1)}</a>',
+                 esc(text))
+    for marker, tag in (("**", "b"), ("*", "i"), ("`", "code")):
+        parts = out.split(marker)
+        if len(parts) < 3:
+            continue
+        rebuilt, opened = [], False
+        for i, chunk in enumerate(parts):
+            rebuilt.append(chunk)
+            if i < len(parts) - 1:
+                rebuilt.append(f"<{'/' if opened else ''}{tag}>")
+                opened = not opened
+        if opened:                       # unbalanced marker: leave it alone
+            continue
+        out = "".join(rebuilt)
+    return out
+
+
+def repo_entry(r: dict, blurb: str) -> str:
+    """One project inside a <details> block."""
+    bits = []
+    if r["stargazers_count"]:
+        bits.append(f'&#11088;{r["stargazers_count"]}')
+    if r["archived"]:
+        bits.append("&#128721; archived")
+    suffix = (" <sub>" + " &middot; ".join(bits) + "</sub>") if bits else ""
+    desc = blurb or r.get("description") or ""
+    head = (f'  <h4><a href="https://github.com/{r["full_name"]}">'
+            f'{esc(r["name"])}</a>{suffix}</h4>')
+    return f'{head}\n  <p>{md_inline(desc)}</p>' if desc else head
+
+
+def details_block(title: str, entries: list[str], count: int,
+                  open_by_default: bool = False) -> str:
+    attr = " open" if open_by_default else ""
+    noun = "repository" if count == 1 else "repositories"
+    return (f'<details{attr}>\n'
+            f'  <summary><b>{esc(title)}</b> &mdash; {count} {noun}</summary>\n'
+            f'  <br>\n' + "\n".join(entries) + "\n</details>")
+
+
+def featured_block(r: dict, blurb: str) -> str:
+    """The one project pulled to the top — most recently pushed of the featured set."""
+    desc = md_inline(blurb or r.get("description") or "")
+    star = f' &#11088;{r["stargazers_count"]}' if r["stargazers_count"] else ""
+    return (f'#### &#127793; Currently working on\n\n'
+            f'<h3><a href="https://github.com/{r["full_name"]}">'
+            f'{esc(r["name"])}</a>{star}</h3>\n\n'
+            f'{desc}')
 
 
 # ─── Main ────────────────────────────────────────────────────────────────────
@@ -353,24 +422,61 @@ def main() -> int:
             (ASSETS / f"timeline-{theme_name}.svg").write_text(
                 timeline_svg(timeline, theme))
 
+    blurbs = cfg.get("blurbs", {})
+
+    # Featured project. Set "featured" in config.json to choose it deliberately.
+    # The fallback is most-recently-pushed, which is only a rough proxy — a round
+    # of maintenance commits across many repos will promote the wrong one.
+    featured_names = [n for g in cfg["sections"] for n in g["repos"]]
+    live = [by_name[n] for n in featured_names
+            if n in by_name and not by_name[n]["archived"]]
+    top = by_name.get(cfg.get("featured", ""))
+    if top is None or top["archived"]:
+        top = max(live, key=lambda r: r["pushed_at"]) if live else None
+
     sections = []
     for group in cfg["sections"]:
-        body = table(by_name, group["repos"], cfg.get("blurbs", {}))
-        if body:
-            sections.append(f"## {group['title']}\n\n{body}")
+        entries, n = [], 0
+        for name in group["repos"]:
+            r = by_name.get(name)
+            if r is None or (top is not None and r["name"] == top["name"]):
+                continue          # missing repo, or already shown at the top
+            entries.append(repo_entry(r, blurbs.get(name, "")))
+            n += 1
+        if entries:
+            sections.append(details_block(group["title"], entries, n,
+                                          open_by_default=not sections))
 
-    live = []
+    # Anything archived gets its own collapsed block rather than quietly
+    # disappearing — "no longer maintained" is useful information.
+    archived = sorted((r for r in repos if r["archived"] and not r["fork"]),
+                      key=lambda r: r["pushed_at"], reverse=True)
+    if archived:
+        sections.append(details_block(
+            "No longer maintained",
+            [repo_entry(r, blurbs.get(r["name"], "")) for r in archived],
+            len(archived)))
+
+    live_rows, dead = [], []
     for label, url in cfg.get("sites", {}).items():
-        live.append(f"| [{label}]({url}) | {url} |")
-    sites_block = ("## Live sites\n\n| Page | URL |\n|---|---|\n" + "\n".join(live)
-                   if live else "")
+        if url_is_live(url):
+            live_rows.append(f"| [{label}]({url}) | {url} |")
+        else:
+            dead.append(f"{label} ({url})")
+    if dead:
+        print("Dropped dead site link(s): " + "; ".join(dead), file=sys.stderr)
+    sites_block = ("#### &#127760; Live sites\n\n| Page | URL |\n|---|---|\n"
+                   + "\n".join(live_rows)) if live_rows else ""
 
     readme = cfg["intro"].rstrip() + "\n\n"
     readme += picture("stats", "Repository statistics") + "\n\n"
-    readme += picture("languages", "Language distribution") + "\n\n"
+    if top is not None:
+        readme += featured_block(top, blurbs.get(top["name"], "")) + "\n\n"
+    readme += "#### &#9889; All projects\n\n"
     readme += "\n\n".join(sections) + "\n\n"
     if sites_block:
         readme += sites_block + "\n\n"
+    readme += picture("languages", "Language distribution") + "\n\n"
     readme += picture("timeline", "Active period of each featured project") + "\n\n"
     readme += cfg["outro"].rstrip() + "\n\n"
     readme += (f"<sub>Generated by "

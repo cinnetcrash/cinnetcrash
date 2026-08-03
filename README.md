@@ -14,47 +14,76 @@ Snakemake pipelines.
   <img alt="Repository statistics" src="assets/stats-light.svg" width="100%">
 </picture>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg">
-  <img alt="Language distribution" src="assets/languages-light.svg" width="100%">
-</picture>
+#### &#127793; Currently working on
 
-## Pipelines & tools
+<h3><a href="https://github.com/cinnetcrash/phage_analysis">phage_analysis</a> &#11088;2</h3>
 
-| Repository | What it does |
-|---|---|
-| [**phage_analysis**](https://github.com/cinnetcrash/phage_analysis) ⭐2 | Nextflow DSL2 pipeline for bacteriophage discovery and characterisation — fastp, Kraken2, SPAdes, VirSorter2, CheckV, BACPHLIP, Pharokka, vContact2 |
-| [**gelidonyamr**](https://github.com/cinnetcrash/gelidonyamr) ⭐2 | Nextflow pipeline for *Salmonella* Infantis: assembly, AMR profiling, plasmid detection, MLST/cgMLST typing |
-| [**reffree-amr-gwas**](https://github.com/cinnetcrash/reffree-amr-gwas) | Reference-free AMR GWAS — unitig-based `pyseer` mixed model that flags novel resistance determinants and scores their phylogenetic mobility |
-| [**kanatli-mikrobiyom-pipeline**](https://github.com/cinnetcrash/kanatli-mikrobiyom-pipeline) | Nanopore metagenomics for poultry gut microbiome (Nextflow DSL2 + Kraken2) |
-| [**GenomePlatform**](https://github.com/cinnetcrash/GenomePlatform) ⭐1 | FastAPI platform running a bacterial genome analysis chain end to end, with AI-assisted reporting and PCR primer design *(research use only)* |
+Nextflow DSL2 pipeline for bacteriophage discovery and characterisation — fastp, Kraken2, SPAdes, VirSorter2, CheckV, BACPHLIP, Pharokka, vContact2
 
-## Data & schemas
+#### &#9889; All projects
 
-| Repository | What it does |
-|---|---|
-| [**Lgarvieae-cgMLST**](https://github.com/cinnetcrash/Lgarvieae-cgMLST) | chewBBACA-compatible core-genome MLST schema for *Lactococcus garvieae* — 1100 loci from 247 QC'd genomes |
-| [**Lactococcus_paper_data**](https://github.com/cinnetcrash/Lactococcus_paper_data) | Supplementary data and figure code for the *L. garvieae* / rainbow trout characterisation paper |
-| [**staph-phage-assembly-analysis**](https://github.com/cinnetcrash/staph-phage-assembly-analysis) | Assembly and characterisation outputs for *S. aureus* bacteriophage isolates |
+<details open>
+  <summary><b>Pipelines &amp; tools</b> &mdash; 4 repositories</summary>
+  <br>
+  <h4><a href="https://github.com/cinnetcrash/gelidonyamr">gelidonyamr</a> <sub>&#11088;2</sub></h4>
+  <p>Nextflow pipeline for <i>Salmonella</i> Infantis: assembly, AMR profiling, plasmid detection, MLST/cgMLST typing</p>
+  <h4><a href="https://github.com/cinnetcrash/reffree-amr-gwas">reffree-amr-gwas</a></h4>
+  <p>Reference-free AMR GWAS — unitig-based <code>pyseer</code> mixed model that flags novel resistance determinants and scores their phylogenetic mobility</p>
+  <h4><a href="https://github.com/cinnetcrash/kanatli-mikrobiyom-pipeline">kanatli-mikrobiyom-pipeline</a></h4>
+  <p>Nanopore metagenomics for poultry gut microbiome (Nextflow DSL2 + Kraken2)</p>
+  <h4><a href="https://github.com/cinnetcrash/GenomePlatform">GenomePlatform</a> <sub>&#11088;1</sub></h4>
+  <p>FastAPI platform running a bacterial genome analysis chain end to end, with AI-assisted reporting and PCR primer design <i>(research use only)</i></p>
+</details>
 
-## Teaching & outreach
+<details>
+  <summary><b>Data &amp; schemas</b> &mdash; 3 repositories</summary>
+  <br>
+  <h4><a href="https://github.com/cinnetcrash/Lgarvieae-cgMLST">Lgarvieae-cgMLST</a></h4>
+  <p>chewBBACA-compatible core-genome MLST schema for <i>Lactococcus garvieae</i> — 1100 loci from 247 QC'd genomes</p>
+  <h4><a href="https://github.com/cinnetcrash/Lactococcus_paper_data">Lactococcus_paper_data</a></h4>
+  <p>Supplementary data and figure code for the <i>L. garvieae</i> / rainbow trout characterisation paper</p>
+  <h4><a href="https://github.com/cinnetcrash/staph-phage-assembly-analysis">staph-phage-assembly-analysis</a></h4>
+  <p>Assembly and characterisation outputs for <i>S. aureus</i> bacteriophage isolates</p>
+</details>
 
-| Repository | What it does |
-|---|---|
-| [**cinnetcrash.github.io**](https://github.com/cinnetcrash/cinnetcrash.github.io) ⭐1 | Bilingual (TR/EN) microbial bioinformatics training curriculum |
-| [**EQA_demo**](https://github.com/cinnetcrash/EQA_demo) | Interactive WGS outbreak investigation built on a CRAB EQA exercise — teaching scenario |
-| [**EQA_Pse_Report**](https://github.com/cinnetcrash/EQA_Pse_Report) | *P. aeruginosa* WGS EQA panel: MLST, AMR, phylogenomics, plasmid typing |
-| [**genomehunter**](https://github.com/cinnetcrash/genomehunter) | Browser game teaching kids the bioinformatics pipeline, DNA → genome |
-| [**Biyoinformatik_TR**](https://github.com/cinnetcrash/Biyoinformatik_TR) ⭐1 | Turkish-language bioinformatics training material |
+<details>
+  <summary><b>Teaching &amp; outreach</b> &mdash; 4 repositories</summary>
+  <br>
+  <h4><a href="https://github.com/cinnetcrash/cinnetcrash.github.io">cinnetcrash.github.io</a> <sub>&#11088;1</sub></h4>
+  <p>Bilingual (TR/EN) microbial bioinformatics training curriculum</p>
+  <h4><a href="https://github.com/cinnetcrash/EQA_demo">EQA_demo</a></h4>
+  <p>Interactive WGS outbreak investigation built on a CRAB EQA exercise — teaching scenario</p>
+  <h4><a href="https://github.com/cinnetcrash/genomehunter">genomehunter</a></h4>
+  <p>Browser game teaching kids the bioinformatics pipeline, DNA → genome</p>
+  <h4><a href="https://github.com/cinnetcrash/Biyoinformatik_TR">Biyoinformatik_TR</a> <sub>&#11088;1</sub></h4>
+  <p>Turkish-language bioinformatics training material</p>
+</details>
 
-## Live sites
+<details>
+  <summary><b>No longer maintained</b> &mdash; 4 repositories</summary>
+  <br>
+  <h4><a href="https://github.com/cinnetcrash/2025_NGS_Exercise_Club">2025_NGS_Exercise_Club</a> <sub>&#128721; archived</sub></h4>
+  <p>NGS exercise club material. <i>Archived — did not go past the outline.</i></p>
+  <h4><a href="https://github.com/cinnetcrash/consensus_printer">consensus_printer</a> <sub>&#128721; archived</sub></h4>
+  <p>Reference-based consensus caller for SARS-CoV-2. <i>Archived — written in Nextflow DSL1, which Nextflow 22.12+ can no longer run.</i></p>
+  <h4><a href="https://github.com/cinnetcrash/WGS_Training">WGS_Training</a> <sub>&#128721; archived</sub></h4>
+  <p><i>Archived — placeholder that never got content.</i></p>
+  <h4><a href="https://github.com/cinnetcrash/python_kodlari">python_kodlari</a> <sub>&#128721; archived</sub></h4>
+  <p>Early Python practice files. <i>Archived — superseded by <a href="https://github.com/cinnetcrash/inhouse-scripts">inhouse-scripts</a>.</i></p>
+</details>
+
+#### &#127760; Live sites
 
 | Page | URL |
 |---|---|
 | [Training curriculum](https://cinnetcrash.github.io/) | https://cinnetcrash.github.io/ |
 | [CRAB outbreak investigation](https://cinnetcrash.github.io/EQA_demo/) | https://cinnetcrash.github.io/EQA_demo/ |
-| [Pseudomonas EQA report](https://cinnetcrash.github.io/EQA_Pse_Report/) | https://cinnetcrash.github.io/EQA_Pse_Report/ |
 | [GenomeHunter](https://cinnetcrash.github.io/genomehunter/) | https://cinnetcrash.github.io/genomehunter/ |
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg">
+  <img alt="Language distribution" src="assets/languages-light.svg" width="100%">
+</picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/timeline-dark.svg">
