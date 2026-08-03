@@ -3,8 +3,8 @@
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0002--8996--7028-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0000-0002-8996-7028)
 [![Website](https://img.shields.io/badge/Training_site-cinnetcrash.github.io-0A66C2)](https://cinnetcrash.github.io/)
 
-Veterinarian working in microbiology and bioinformatics at Ankara University,
-Faculty of Veterinary Medicine (Department of Microbiology). My work sits where
+Veterinarian (DVM, PhD) working in microbiology and bioinformatics at Ankara
+University, Faculty of Veterinary Medicine (Department of Microbiology). My work sits where
 clinical and veterinary microbiology meets genomics: **bacteriophage genomics**,
 **antimicrobial resistance surveillance**, and **whole-genome sequencing of
 bacterial isolates** — mostly as reproducible Nextflow and Snakemake pipelines.
@@ -51,7 +51,7 @@ Prokka · chewBBACA · pyseer · Kraken2 · CheckV
 <br>
 
 Ankara Üniversitesi Veteriner Fakültesi Mikrobiyoloji Anabilim Dalı'nda
-mikrobiyoloji ve biyoinformatik alanında çalışan bir veteriner hekimim.
+mikrobiyoloji ve biyoinformatik alanında çalışan bir veteriner hekimim (DVM, PhD).
 Çalışma alanlarım **bakteriyofaj genomiği**, **antimikrobiyal direnç
 sürveyansı** ve **klinik bakteriyel tam genom dizileme** — ağırlıklı olarak
 yeniden üretilebilir Nextflow ve Snakemake iş akışları biçiminde.
