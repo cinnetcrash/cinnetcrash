@@ -3,29 +3,29 @@
 <text x="24" y="30" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#59636e" letter-spacing="0.6">REPOSITORIES BY PRIMARY LANGUAGE</text>
 <clipPath id="barclip"><rect x="24" y="44" width="712" height="16" rx="8.0"/></clipPath>
 <g clip-path="url(#barclip)">
-<rect x="24.00" y="44" width="256.91" height="16" fill="#2a78d6"/>
-<rect x="282.91" y="44" width="95.09" height="16" fill="#eda100"/>
-<rect x="380.00" y="44" width="95.09" height="16" fill="#1baf7a"/>
-<rect x="477.09" y="44" width="95.09" height="16" fill="#eb6834"/>
-<rect x="574.18" y="44" width="62.73" height="16" fill="#e87ba4"/>
-<rect x="638.91" y="44" width="30.36" height="16" fill="#e34948"/>
-<rect x="671.27" y="44" width="30.36" height="16" fill="#008300"/>
-<rect x="703.64" y="44" width="32.36" height="16" fill="#4a3aa7"/>
+<rect x="24.00" y="44" width="276.61" height="16" fill="#2a78d6"/>
+<rect x="302.61" y="44" width="90.87" height="16" fill="#eda100"/>
+<rect x="395.48" y="44" width="90.87" height="16" fill="#1baf7a"/>
+<rect x="488.35" y="44" width="90.87" height="16" fill="#eb6834"/>
+<rect x="581.22" y="44" width="59.91" height="16" fill="#e87ba4"/>
+<rect x="643.13" y="44" width="28.96" height="16" fill="#e34948"/>
+<rect x="674.09" y="44" width="28.96" height="16" fill="#008300"/>
+<rect x="705.04" y="44" width="30.96" height="16" fill="#4a3aa7"/>
 </g>
 <circle cx="29" cy="90" r="5" fill="#2a78d6"/>
-<text x="42" y="94" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12.5" fill="#1f2328">Python <tspan fill="#59636e">36%</tspan></text>
+<text x="42" y="94" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12.5" fill="#1f2328">Python <tspan fill="#59636e">39%</tspan></text>
 <circle cx="207" cy="90" r="5" fill="#eda100"/>
-<text x="220" y="94" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12.5" fill="#1f2328">HTML <tspan fill="#59636e">14%</tspan></text>
+<text x="220" y="94" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12.5" fill="#1f2328">HTML <tspan fill="#59636e">13%</tspan></text>
 <circle cx="385" cy="90" r="5" fill="#1baf7a"/>
-<text x="398" y="94" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12.5" fill="#1f2328">Nextflow <tspan fill="#59636e">14%</tspan></text>
+<text x="398" y="94" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12.5" fill="#1f2328">Nextflow <tspan fill="#59636e">13%</tspan></text>
 <circle cx="563" cy="90" r="5" fill="#eb6834"/>
-<text x="576" y="94" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12.5" fill="#1f2328">R <tspan fill="#59636e">14%</tspan></text>
+<text x="576" y="94" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12.5" fill="#1f2328">R <tspan fill="#59636e">13%</tspan></text>
 <circle cx="29" cy="112" r="5" fill="#e87ba4"/>
 <text x="42" y="116" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12.5" fill="#1f2328">Shell <tspan fill="#59636e">9%</tspan></text>
 <circle cx="207" cy="112" r="5" fill="#e34948"/>
-<text x="220" y="116" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12.5" fill="#1f2328">CSS <tspan fill="#59636e">5%</tspan></text>
+<text x="220" y="116" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12.5" fill="#1f2328">CSS <tspan fill="#59636e">4%</tspan></text>
 <circle cx="385" cy="112" r="5" fill="#008300"/>
-<text x="398" y="116" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12.5" fill="#1f2328">JavaScript <tspan fill="#59636e">5%</tspan></text>
+<text x="398" y="116" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12.5" fill="#1f2328">JavaScript <tspan fill="#59636e">4%</tspan></text>
 <circle cx="563" cy="112" r="5" fill="#4a3aa7"/>
-<text x="576" y="116" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12.5" fill="#1f2328">Jupyter Notebook <tspan fill="#59636e">5%</tspan></text>
+<text x="576" y="116" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12.5" fill="#1f2328">Jupyter Notebook <tspan fill="#59636e">4%</tspan></text>
 </svg>

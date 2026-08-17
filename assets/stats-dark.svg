@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="760" height="132" viewBox="0 0 760 132" role="img" aria-label="Repository statistics">
 <rect x="0.5" y="0.5" width="759" height="131" rx="10" fill="#151b23" stroke="#3d444d"/>
 <text x="24" y="34" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#9198a1" letter-spacing="0.6">AT A GLANCE</text>
-<text x="24" y="86" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="34" font-weight="700" fill="#3987e5">37</text>
+<text x="24" y="86" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="34" font-weight="700" fill="#3987e5">38</text>
 <text x="24" y="108" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12.5" fill="#9198a1">repositories</text>
-<text x="202" y="86" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="34" font-weight="700" fill="#3987e5">8</text>
+<text x="202" y="86" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="34" font-weight="700" fill="#3987e5">11</text>
 <text x="202" y="108" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12.5" fill="#9198a1">stars earned</text>
 <text x="380" y="86" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="34" font-weight="700" fill="#3987e5">8</text>
 <text x="380" y="108" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12.5" fill="#9198a1">languages</text>
